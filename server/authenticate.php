@@ -6,11 +6,7 @@
  * @package momentage
  * @see config.php
  */
-
-//header('Access-Control-Allow-Origin: *');
 require 'config.php';
-
-
 
 /**
  * get details from to facebook graph by id
@@ -57,6 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 		$response['data'] = array('user_info' => $user_info, 'user_media' => $user_media);
 		$response['data_fetch_url'] = 'https://familymelon.com/momentage/fetch.php?client_id=' . $user_id;
 	} else {
+		//ops badboy
 		$response['success'] = false;
 		$response['message'] = 'Not a valid access token';
 	}
