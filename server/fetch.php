@@ -1,6 +1,10 @@
 <?php
 header('Access-Control-Allow-Origin: *');
-
+/**
+ * fetch data by client_id
+ * @author NeatProject
+ * @see config.php
+ */
 require 'config.php';
 
 $db = DB::getInstance();
