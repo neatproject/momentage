@@ -12,7 +12,7 @@ $client_id = isset($_GET['client_id']) ? $_GET['client_id'] : null;
 $user_id_exists = $db->GetCell('SELECT id FROM users WHERE fb_id = :fb_id', array(':fb_id' => $client_id));
 
 if (!$user_id_exists) die('not a valid client id');
-
+//get resource by client
 $user_media = $db->GetAll('
 SELECT t2.*
 FROM users t1
