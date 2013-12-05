@@ -1,7 +1,4 @@
 <?php
-/* app settings */
-define('APP_ID', '514447938662433');
-define('APP_SECRET', 'dd0147d626453d918ccaa95c9289b0a5');
 /* Database Settings */
 require 'libs/rb.php';
 
