@@ -55,7 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 		ORDER BY t2.post_date DESC', array(':fb_id' => $user_id));
 
 		$response['data'] = array('user_info' => $user_info, 'user_media' => $user_media);
-		$response['data_fetch_url'] = 'https://www.iadrian.pe/paisa-connect/fetch.php?client_id=' . $user_id;
+		$response['data_fetch_url'] = 'https://familymelon.com/momentage/fetch.php?client_id=' . $user_id;
 	} else {
 		$response['success'] = false;
 		$response['message'] = 'Not a valid access token';
